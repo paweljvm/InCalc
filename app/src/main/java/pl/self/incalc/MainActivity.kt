@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity() {
 
 
         val service = CalcService.get()
-        val result = service.calc(amount, percent.toFloat(), time.toInt(), daysOrMonthsField!!.isChecked)
-        resultField!!.text = result.toPlainString()
+        val result = service.calc(amount, percent.toFloat(), time.toInt(), daysOrMonthsField?.isChecked ?: false)
+        resultField?.text = result.toPlainString()
     }
 
     private fun initFields() {
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun parse(text: EditText?): BigDecimal {
-        val str = text!!.text.toString()
+        val str = text?.text?.toString()
         return BigDecimal.valueOf(java.lang.Float.parseFloat(str).toDouble())
     }
 
