@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InCalc</string>
+    <string name="amount">Amount</string>
+    <string name="percent">Percent</string>
+    <string name="days_or_months">Days/Months</string>
+    <string name="time">Time</string>
+    <string name="calc">Calc</string>
+</resources>
