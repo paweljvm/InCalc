@@ -1,1 +1,1 @@
-# Prosty kalkulator zysku z lokat
+Simple deposit profit calculator
